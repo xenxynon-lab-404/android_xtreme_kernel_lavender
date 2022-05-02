@@ -195,6 +195,7 @@ function compile() {
     # Copy Files To AnyKernel3 Zip
     cp $IMAGE AnyKernel3
     cp out/drivers/input/misc/qti-haptics.ko AnyKernel3/
+    cp out/net/netfilter/xt_qtaguid.ko AnyKernel3/
 }
 ##----------------------------------------------------------##
 
