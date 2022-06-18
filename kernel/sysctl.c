@@ -1235,7 +1235,7 @@ static struct ctl_table kern_table[] = {
 		.procname	= "perf_cpu_time_max_percent",
 		.data		= &sysctl_perf_cpu_time_max_percent,
 		.maxlen		= sizeof(sysctl_perf_cpu_time_max_percent),
-		.mode		= 0644,
+		.mode		= 0444,
 		.proc_handler	= perf_cpu_time_max_percent_handler,
 		.extra1		= &zero,
 		.extra2		= &one_hundred,
@@ -1846,7 +1846,7 @@ static struct ctl_table fs_table[] = {
 		.procname	= "lease-break-time",
 		.data		= &lease_break_time,
 		.maxlen		= sizeof(int),
-		.mode		= 0644,
+		.mode		= 0444,
 		.proc_handler	= proc_dointvec,
 	},
 #endif
